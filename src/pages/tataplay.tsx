@@ -1,12 +1,10 @@
 import { Header } from "@/components/Header";
 
-export function Tataplay() {
+export default function tataplay() {
   return (
     <div>
       <Header />
-          <div>
-              
-      </div>
+      <div></div>
     </div>
   );
 }

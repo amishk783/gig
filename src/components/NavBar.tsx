@@ -7,8 +7,8 @@ export function NavBar() {
     <div className="flex py-2 text-white text-lg mx-5">
       <div className="hidden md:flex justify-between gap-10">
         <Link href="/">Home</Link>
-        <Link href="/">About us</Link>
-        <Link href="/">Contact us</Link>
+        <Link href="/about">About us</Link>
+        <Link href="/contact">Contact us</Link>
       </div>
     </div>
   );

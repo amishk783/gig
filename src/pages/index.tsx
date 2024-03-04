@@ -5,15 +5,11 @@ import { footerCard } from "@/Constant/constant";
 import { dthDetails } from "@/Constant/constant";
 
 import { Form } from "@/components/Form";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-
-
-  
-
-
   return (
     <>
       <Header />
@@ -40,15 +36,17 @@ export default function Home() {
                 className="flex flex-col gap-2 text-xl transition duration-300 ease-in-out transform hover:scale-105"
                 key={dthDetail.title}
               >
-                <Image
-                  src={dthDetail.image}
-                  alt="hero"
-                  width={282}
-                  height={282}
-                />
-                <h1 className="text-zinc-700 text-center font-medium">
-                  {dthDetail.title}
-                </h1>
+                <Link href="/tataplay">
+                  <Image
+                    src={dthDetail.image}
+                    alt="hero"
+                    width={282}
+                    height={282}
+                  />
+                  <h1 className="text-zinc-700 text-center font-medium">
+                    {dthDetail.title}
+                  </h1>
+                </Link>
               </div>
             ))}
           </div>
