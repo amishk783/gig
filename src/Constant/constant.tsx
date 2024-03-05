@@ -1,26 +1,26 @@
 export const footerCard: { icon: string; title: string }[] = [
   {
-    icon: "/footer/phone.png",
+    icon: "/footer/icon1.png",
     title: "Call Us",
   },
   {
-    icon: "/footer/whatsapp.png",
+    icon: "/footer/icon2.png",
     title: "Whatsapp",
   },
   {
-    icon: "/footer/email.png",
+    icon: "/footer/icon3.png",
     title: "Email",
   },
   {
-    icon: "/footer/locate.png",
+    icon: "/footer/icon4.png",
     title: "Locate Us",
   },
   {
-    icon: "/footer/email.png",
+    icon: "/footer/icon5.png",
     title: "Email",
   },
   {
-    icon: "/footer/locate.png",
+    icon: "/footer/icon6.png",
     title: "Locate Us",
   },
 ];

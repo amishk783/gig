@@ -27,7 +27,7 @@ export function Form({ isFooter = false }: { isFooter?: boolean }) {
   };
   return (
     <form
-      className="flex flex-col space-y-3 p-5 w-full"
+      className="flex flex-col space-y-3 p-5 w-full "
       onSubmit={handleSubmit(submitHandler)}
     >
       <label className="">Name</label>
@@ -53,7 +53,7 @@ export function Form({ isFooter = false }: { isFooter?: boolean }) {
         </>
       )}
       <button
-        className=" bg-[#5bc0de] hover:bg-[#189DA0] py-2 px-2 text-white text-lg rounded-md"
+        className=" bg-[#FC2E20] hover:bg-red-500 py-2 px-2 text-white text-lg rounded-md"
         type="submit"
       >
         Get a call back

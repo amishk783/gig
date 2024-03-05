@@ -13,12 +13,15 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className={`${inter.className}`}>
-        <div className="px-5 max-container">
-          <div className="flex  flex-col xl:pt-20 xl:flex-row border-b-2  border-slate-200  items-center xl:justify-evenly justify-center py-8 gap-5">
+      <main className="font-benface">
+        <div className="px-5 max-container ">
+          <div className=" z-50">
+          <div className="flex flex-col xl:pt-20 xl:flex-row border-b-2 border-slate-200 z-50 items-center xl:justify-evenly justify-center py-8 gap-5">
+          <div className="bg-custom "></div>
             <div className="flex flex-col">
               <Image src="/qr.png" alt="hero" width={350} height={300} />
-              <button className="bg-[#5bc0de] hover:bg-[#189DA0] text-white font-bold py-2 px-4 rounded">
+
+              <button className="bg-[#FC2E20] hover:bg-red-400 text-white font-bold py-2 px-4 rounded">
                 Click to Start Chat
               </button>
             </div>
@@ -26,6 +29,7 @@ export default function Home() {
               <h1 className="text-3xl ">Tata Play New Connection</h1>
               <p>FREE HOME DELIVERY | COD AVAILABLE</p>
               <Form />
+              </div>
             </div>
           </div>
           <div></div>
@@ -33,7 +37,7 @@ export default function Home() {
           <div className="flex flex-col xl:flex-row border-b-2 border-slate-200  items-center justify-center py-8 gap-5 xl:gap-20">
             {dthDetails.map((dthDetail) => (
               <div
-                className="flex flex-col gap-2 text-xl transition duration-300 ease-in-out transform hover:scale-105"
+                className="flex flex-col gap-2 text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-sm hover:shadow-lg  rounded-lg hover:shadow-red-100 items-center "
                 key={dthDetail.title}
               >
                 <Link href="/tataplay">
@@ -43,7 +47,7 @@ export default function Home() {
                     width={282}
                     height={282}
                   />
-                  <h1 className="text-zinc-700 text-center font-medium">
+                  <h1 className="text-zinc-700 pb-2 text-center font-medium">
                     {dthDetail.title}
                   </h1>
                 </Link>
@@ -53,16 +57,17 @@ export default function Home() {
           <div className="grid grid-cols-2 xl:grid-cols-3 xl:flex-row border-b-2 border-slate-200  items-center justify-center py-8 gap-5 xl:gap-20">
             {footerCard.map((dthDetail) => (
               <div
-                className="flex flex-col gap-2 bg-white rounded-md shadow-xl items-center  "
+                className="flex flex-col gap-6 bg-white rounded-md shadow-xl items-center  "
                 key={dthDetail.title}
               >
                 <Image
                   src={dthDetail.icon}
                   alt="hero"
-                  width={182}
-                  height={182}
+                  className=""
+                  width={100}
+                  height={10}
                 />
-                <h1 className="text-zinc-700 text-center font-medium pb-2">
+                <h1 className="text-zinc-700 pb-5 text-xl text-center font-medium ">
                   {dthDetail.title}
                 </h1>
               </div>
