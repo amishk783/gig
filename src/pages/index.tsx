@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { footerCard } from "@/Constant/constant";
 import { dthDetails } from "@/Constant/constant";
 
+
 import { Form } from "@/components/Form";
 import Link from "next/link";
 
@@ -21,7 +22,7 @@ export default function Home() {
             <div className="flex flex-col">
               <Image src="/qr.png" alt="hero" width={350} height={300} />
 
-              <button className="bg-[#FC2E20] hover:bg-red-400 text-white font-bold py-2 px-4 rounded">
+              <button className="bg-[#FC2E20] hover:bg-red-700 text-white font-bold py-2 px-4 rounded font-semibold">
                 Click to Start Chat
               </button>
             </div>

@@ -25,7 +25,7 @@ export function NavBar() {
           Contact us
         </Link>
         {/* #2F5061 #F4EAE6 #4297A0 */}
-        <button className="px-3 py-[3px] bg-red-600 rounded-[30px] text-white hover:scale-[105%] transition hover:delay-75 hover:bg-red-700 ">
+        <button className="px-3 py-[3px] bg-red-600 rounded-[30px] text-white hover:scale-[105%] transition hover:delay-75 hover:bg-red-700 font-semibold">
           Get a Callback
         </button>
       </div>
