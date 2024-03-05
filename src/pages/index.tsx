@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="font-benface">
+      <main className="font-sans">
         <div className="px-5 max-container ">
           <div className=" z-50">
           <div className="flex flex-col xl:pt-20 xl:flex-row border-b-2 border-slate-200 z-50 items-center xl:justify-evenly justify-center py-8 gap-5">
@@ -22,7 +22,7 @@ export default function Home() {
             <div className="flex flex-col">
               <Image src="/qr.png" alt="hero" width={350} height={300} />
 
-              <button className="bg-[#FC2E20] hover:bg-red-700 text-white font-bold py-2 px-4 rounded font-semibold">
+              <button className="bg-[#FC2E20] hover:bg-red-700 text-white font py-2 px-4 rounded font-semibold">
                 Click to Start Chat
               </button>
             </div>
