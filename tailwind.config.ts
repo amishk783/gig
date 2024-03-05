@@ -19,7 +19,7 @@ const config: Config = {
     }, 
 
        fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Lato', 'sans-serif'],
         serif: ['Georgia', 'serif'],
         mono: ['SFMono-Regular', 'monospace'],
       },
