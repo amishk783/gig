@@ -1,6 +1,5 @@
 import type { Config } from "tailwindcss";
 
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,19 +12,16 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "bg-custom": "url('/public/dth/bg.jpg')",
       },
-      
-   
-    }, 
+    },
 
-       fontFamily: {
-        sans: ['Lato', 'sans-serif'],
-        serif: ['Georgia', 'serif'],
-        mono: ['SFMono-Regular', 'monospace'],
-      },
+    fontFamily: {
+      sans: ["Lato", "sans-serif"],
+      serif: ["Georgia", "serif"],
+      mono: ["SFMono-Regular", "monospace"],
+    },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [],
 };
 export default config;

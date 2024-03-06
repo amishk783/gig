@@ -47,9 +47,4 @@
     margin: 0 auto;
   }
 }
-@layer components {
-  .bg-custom {
-    background-image: url("/bg.jpg");
-    opacity: 0.5;
-  }
-}
+
