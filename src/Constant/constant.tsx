@@ -42,3 +42,30 @@ export const dthDetails: { image: string; title: string }[] = [
     title: "D2H",
   },
 ];
+
+export const tataPlayPlans: { title?: string; subTitle: string; price: string; image?: string; }[] = [
+  {
+    title: 'Default Title', // Default value for title
+    subTitle: 'Default Subtitle', // Default value for subTitle
+    price: 'Default Price', // Default value for price
+    image: '', // Set image to undefined for the default object
+  },
+  {
+    title: "Dish TV",
+    subTitle: "Subtitle",
+    price: "Price",
+    image: "/dth/dth2.png",
+  },
+  {
+    title: "Sun Direct",
+    subTitle: "Subtitle",
+    price: "Price",
+    image: "/dth/dth3.png",
+  },
+  {
+    title: "D2H",
+    subTitle: "Subtitle",
+    price: "Price",
+    image: "/dth/dth4.png",
+  },
+];
