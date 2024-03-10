@@ -12,7 +12,7 @@ export function Header() {
     setIsMobile((prevState) => !prevState);
   };
   return (
-    <div className="w-full h-15 bg-white py-3 xl:px-40 shadow-md">
+    <div className="w-full bg-white py-3 xl:px-40 shadow-md">
       <div className="flex justify-between mx-5 items-center">
         <Link href="/">
           <Image className="" src="/logo.png" alt="logo" width={180} height={57} />

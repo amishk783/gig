@@ -1,9 +1,10 @@
 import Image from "next/image";
-// import { Inter } from "next/font/google";
+import { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
-
+import { FaSquareWhatsapp } from "react-icons/fa6";
 import { footerCard } from "@/Constant/constant";
 import { dthDetails } from "@/Constant/constant";
+import { HelpCircle, XCircle } from "lucide-react";
 
 import { Form } from "@/components/Form";
 import Link from "next/link";
@@ -14,9 +15,14 @@ const services: string[] = [
   " Privacy Policy",
   "We Are Authorised Partner With Tata Play India",
 ];
-// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [isHelpOpen, setIsHelpOpen] = useState<boolean>(false);
+
+  const handleHelp = () => {
+    setIsHelpOpen((prevState) => !prevState);
+  };
+
   return (
     <>
       <main className="font-sans">
@@ -26,10 +32,10 @@ export default function Home() {
               <div className=" md:hidden w-full h-[600px] bg-[url('/dth/bg.jpg')] bg-no-repeat bg-contain bg-left z-[-10] absolute opacity-50"></div>
 
               <Image
-                className="hidden md:flex xl:w-[700px] md:rounded-full"
+                className="hidden md:flex "
                 src="/dth/bg.jpg"
                 alt="hero"
-                width={350}
+                width={700}
                 height={300}
               />
 
@@ -127,6 +133,26 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        {isHelpOpen && (
+          <div className="flex flex-col py-6 gap-2 px-5 bg-red-500 rounded-md fixed  right-7 top-[73%] text-white text-lg font-sans ">
+            <h3 className="border-b py-2">Call us</h3>
+            <h3 className="flex border-b py-2 gap-2 items-center">
+              Chat with us
+              <span>
+                <FaSquareWhatsapp size={24} className="bg-green-500 rounded-full " />
+              </span>
+            </h3>
+          </div>
+        )}
+        <div className=" md:hidden fixed  right-7 top-[90%]  ">
+          <button onClick={handleHelp} className="bg-red-600 rounded-full">
+            {!isHelpOpen ? (
+              <HelpCircle size={48} className="text-white" />
+            ) : (
+              <XCircle size={48} className="text-white " />
+            )}
+          </button>
         </div>
       </main>
     </>
