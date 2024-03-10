@@ -43,29 +43,54 @@ export const dthDetails: { image: string; title: string }[] = [
   },
 ];
 
-export const tataPlayPlans: { title?: string; subTitle: string; price: string; image?: string; }[] = [
+export const tataPlayPlans: {
+  title?: string;
+  subTitle: string;
+  price: string;
+}[] = [
   {
-    title: 'Default Title', // Default value for title
-    subTitle: 'Default Subtitle', // Default value for subTitle
-    price: 'Default Price', // Default value for price
-    image: '', // Set image to undefined for the default object
+    title: "HD Set Top Box",
+    subTitle: "1 Month Hindi Super Value",
+    price: "1279",
   },
   {
-    title: "Dish TV",
-    subTitle: "Subtitle",
-    price: "Price",
-    image: "/dth/dth2.png",
+    title: "HD Set Top Box",
+    subTitle: "1 Month Hindi Super Value",
+    price: "1279",
   },
   {
-    title: "Sun Direct",
-    subTitle: "Subtitle",
-    price: "Price",
-    image: "/dth/dth3.png",
+    title: "HD Set Top Box",
+    subTitle: "1 Month Hindi Super Value",
+    price: "1279",
   },
   {
-    title: "D2H",
-    subTitle: "Subtitle",
-    price: "Price",
-    image: "/dth/dth4.png",
+    title: "HD Set Top Box",
+    subTitle: "1 Month Hindi Super Value",
+    price: "1279",
+  },
+  {
+    title: "HD Set Top Box",
+    subTitle: "1 Month Hindi Super Value",
+    price: "1279",
+  },
+  {
+    title: "HD Set Top Box",
+    subTitle: "1 Month Hindi Super Value",
+    price: "1279",
+  },
+  {
+    title: "HD Set Top Box",
+    subTitle: "1 Month Hindi Super Value",
+    price: "1279",
+  },
+  {
+    title: "HD Set Top Box",
+    subTitle: "1 Month Hindi Super Value",
+    price: "1279",
+  },
+  {
+    title: "HD Set Top Box",
+    subTitle: "1 Month Hindi Super Value",
+    price: "1279",
   },
 ];
