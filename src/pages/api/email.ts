@@ -20,16 +20,11 @@ export default async function handler(
   });
   let mailOptions = {
     from: '"Fred Foo 👻" <',
-    to: '',
+    // to: ''
     subject: "Hello ✔",
     html: "<b>Hello world?</b>",
   };
-  await transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      return console.log(error);
-    }
-    console.log("Message sent: %s", info.messageId);
-  });
+  await transporter.sendMail(mailOptions);
 
   res.status(200).json({ name: "John Doe" });
 }
