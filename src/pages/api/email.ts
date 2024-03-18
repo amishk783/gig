@@ -2,29 +2,41 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 type Data = {
-  name: string;
+  message: string;
 };
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+  console.log(req.body);
   let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
+    name: "digitalinindia.com",
+    host: "smtp.hostinger.com",
+    port: 465,
+    secure: true,
     auth: {
-      user: "",
-      pass: "",
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
   });
   let mailOptions = {
-    from: '"Fred Foo 👻" <',
-    // to: ''
+    from: process.env.EMAIL,
+    to: "lead@digitalinindia.in",
     subject: "Hello ✔",
     html: "<b>Hello world?</b>",
   };
-  await transporter.sendMail(mailOptions);
+  await transporter.sendMail(mailOptions, (err,info) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).json({ message: "Error" });
+    }
+    else {
+      console.log(info);
+      return res.status(200).json({ message: "Email sent" });
+    }
+    
+  });
 
-  res.status(200).json({ name: "John Doe" });
+  res.status(200).json({ message: "John Doe" });
 }

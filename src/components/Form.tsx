@@ -14,7 +14,13 @@ const schema = z.object({
   message: z.string().nonempty(),
 });
 
-export function Form({ isFooter = false }: { isFooter?: boolean }) {
+export function Form({
+  isFooter = false,
+  isCoperate = false,
+}: {
+  isFooter?: boolean;
+  isCoperate?: boolean;
+}) {
   console.log(isFooter);
   const {
     register,
@@ -24,6 +30,11 @@ export function Form({ isFooter = false }: { isFooter?: boolean }) {
 
   const submitHandler = (data: FormValues) => {
     console.log(data);
+    const response = fetch("/api/email", {
+      body: JSON.stringify(data),
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+    });
   };
   return (
     <form
@@ -49,6 +60,16 @@ export function Form({ isFooter = false }: { isFooter?: boolean }) {
             className=" border-2 border-slate-200 rounded-md py-2 px-3"
             {...register("message", { required: true })}
             placeholder="Please share your pincode"
+          />
+        </>
+      )}
+      {!isCoperate && (
+        <>
+          <label className="">Message</label>
+          <textarea
+            className=" border-2 border-slate-200 rounded-md py-2 px-3"
+            {...register("message", { required: true })}
+            placeholder="Please share your message"
           />
         </>
       )}
