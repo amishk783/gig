@@ -50,10 +50,10 @@ export default function Home() {
             <div className="text-4xl pt-10 pb-5 font-sans font-bold gap-5 text-center ">
               Explore New <span className="text-red-500">Plans!</span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex-row border-b-2 border-slate-200  items-center justify-center py-4 gap-5 xl:gap-20">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex-row border-b-2 border-slate-200  items-center justify-center py-4 gap-5 xl:gap-20 ">
               {dthDetails.map((dthDetail) => (
                 <div
-                  className="flex flex-col gap-2 text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-sm hover:shadow-lg  rounded-lg hover:shadow-red-100 items-center "
+                  className="flex flex-col gap-2 text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg  rounded-lg hover:shadow-red-100 items-center "
                   key={dthDetail.title}
                 >
                   <Link href="/tataplay">
@@ -79,7 +79,7 @@ export default function Home() {
             <div className="grid grid-cols-2 xl:grid-cols-3 xl:flex-row border-b-2 border-slate-200  items-center justify-center py-8 gap-5 xl:gap-20">
               {footerCard.map((dthDetail) => (
                 <div
-                  className="flex flex-col gap-6 bg-white rounded-md shadow-xl items-center  "
+                  className="flex flex-col gap-6 bg-white rounded-md shadow-inner items-center  "
                   key={dthDetail.title}
                 >
                   <Image
