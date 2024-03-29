@@ -92,13 +92,13 @@ export default function Home() {
             <div className="grid grid-cols-2 xl:grid-cols-3 xl:flex-row border-b-2 border-slate-200  items-center justify-center py-8 gap-5 xl:gap-20">
               {footerCard.map((dthDetail) => (
                 <div
-                  className="flex flex-col gap-6 bg-white rounded-md shadow-inner items-center  "
+                  className="flex flex-col gap-6 bg-slate-200 rounded-md shadow-inner justify-center items-center h-[200px]  "
                   key={dthDetail.title}
                 >
                   <Image
                     src={dthDetail.icon}
                     alt="hero"
-                    className=""
+                    className="w-20 h-20 pt-2"
                     width={100}
                     height={10}
                   />

@@ -5,13 +5,15 @@ import { resolve } from "path";
 type FormValues = {
   name: string;
   number: string;
-  message: string;
+  pincode: string;
+  address: string | undefined;
 };
 
 const schema = z.object({
   name: z.string().nonempty(),
   number: z.string().nonempty(),
-  message: z.string().nonempty(),
+  pincode: z.string().nonempty(),
+  address: z.string().nonempty().optional(),
 });
 
 export function Form({
@@ -28,13 +30,18 @@ export function Form({
     formState: { errors },
   } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
-  const submitHandler = (data: FormValues) => {
+  const submitHandler = async (data: FormValues) => {
     console.log(data);
-    const response = fetch("/api/email", {
+    const response = await fetch("/api/email", {
       body: JSON.stringify(data),
       method: "POST",
       headers: { "Content-Type": "application/json" },
     });
+    const result = await response.json();
+    if (response.ok) {
+      alert("Email sent");
+    }
+
   };
   return (
     <form
@@ -58,17 +65,17 @@ export function Form({
           <label className="">Pincode</label>
           <input
             className=" border-2 border-slate-200 rounded-md py-2 px-3"
-            {...register("message", { required: true })}
+            {...register("pincode", { required: true })}
             placeholder="Please share your pincode"
           />
         </>
       )}
-      {!isCoperate && (
+      {isCoperate && (
         <>
           <label className="">Message</label>
           <textarea
             className=" border-2 border-slate-200 rounded-md py-2 px-3"
-            {...register("message", { required: true })}
+            {...register("address", { required: true })}
             placeholder="Please share your message"
           />
         </>

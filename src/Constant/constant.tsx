@@ -63,6 +63,13 @@ export const tataPlayPlans: {
     subTitle: "1 Month Hindi Super Value",
     price: "1279",
   },
+];
+
+export const marathiPlans: {
+  title?: string;
+  subTitle: string;
+  price: string;
+}[] = [
   {
     title: "HD Set Top Box",
     subTitle: "1 Month Hindi Super Value",

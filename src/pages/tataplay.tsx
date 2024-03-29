@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Prefooter } from "@/components/Prefooter";
 import { CheckCircle2 } from "lucide-react";
+import { Card } from "@/components/Card";
 
 export const services: string[] = [
   "Installation With in 4 Hours All India",
@@ -19,7 +20,6 @@ export default function tataplay() {
     <div className="px-5 max-container ">
       <div className="z-[10]">
         <div className="flex flex-col xl:pt-20 md:flex-row border-b-2 border-slate-200 z-[10] items-center xl:justify-around  justify-center py-8 gap-5">
-          <div className=" md:hidden w-full h-[600px] bg-[url('/dth/bg.jpg')] bg-no-repeat bg-contain bg-left z-[-10] absolute opacity-50"></div>
           <div
             aria-hidden="true"
             className="pointer-events-none top-10 absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -29,12 +29,12 @@ export default function tataplay() {
                 clipPath:
                   "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
               }}
-              className="relative top-20 left-[calc(50%-13rem)] aspect-[1155/878]  w-[46.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff006a] to-[#9089fc] opacity-40 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem] "
+              className="relative top-20 left-[calc(50%-13rem)] aspect-[1155/878] md:aspect-[1155/878]  w-[46.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff006a] to-[#9089fc] opacity-40 sm:left-[calc(50%-36rem)] sm:w-[72.1875rem] max-sm:top-0 "
             />
           </div>
 
           <Image
-            className="hidden md:flex  clip-path  "
+            className=" md:flex  clip-path  "
             src="/tataplay.png"
             alt="hero"
             width={700}
@@ -51,14 +51,14 @@ export default function tataplay() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 border-b-2 border-slate-200  items-center justify-center py-4 gap-5 xl:gap-10">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 border-b-2 border-slate-200  items-center justify-center py-4 gap-5 xl:gap-10">
         {tataPlayPlans.map((tataplayDetail) => (
           <div
             className="flex flex-col gap-4 text-xl py-5 transition duration-300 ease-in-out border-red-400 border-2 hover:border-[4px] transform hover:scale-[102%] shadow-lg shadow-red-300 hover:shadow-lg   rounded-lg hover:shadow-red-100 items-center "
             key={tataplayDetail.title}
           >
-            <div className="border-b-2 border-red-500">
-              <h1 className="text-zinc-700 pb-2 text-center font-medium">
+            <div className="border-b-2 border-red-500 ">
+              <h1 className="text-zinc-700 pb-2 text-center font-medium ">
                 {tataplayDetail.title}
               </h1>
               <h2>{tataplayDetail.subTitle}</h2>
@@ -82,6 +82,31 @@ export default function tataplay() {
             </button>
           </div>
         ))}
+      </div> */}
+      <div className="flex flex-col mt-10 ">
+        <div>
+          
+        </div>
+        <div className="flex justify-center items-center ">
+          <div className="-z-1 h-48 w-48 border-4 rounded-full bg-red-500 border-red-400 border-b-transparent border-l-transparent -rotate-45 "></div>
+        </div>
+        <div className="-mt-28 z-0 ">
+          <div className=" bg-red-500">
+            <h1 className="text-4xl font-semibold text-center ">
+              HD Set Top Box{" "}
+            </h1>
+          </div>
+        </div>
+          <div className="flex justify-between py-10">
+            {tataPlayPlans.map((tataplayDetail) => (
+              <Card
+                key={tataplayDetail.title}
+                title={tataplayDetail.title}
+                subTitle={tataplayDetail.subTitle}
+                price={tataplayDetail.price}
+              />
+            ))}
+          </div>
       </div>
       <Prefooter />
     </div>
