@@ -1,6 +1,7 @@
 import { Divide } from 'hamburger-react'
 import React from 'react'
 import { CheckCircle2 } from "lucide-react";
+import { Form } from '@/components/Form';
 
 const corporateOffers = () => {
   return (
@@ -163,7 +164,7 @@ const corporateOffers = () => {
             get your Tata Play set up for Jingalala entertainment
           </div>
       </div>
-      <div className=' items-center'> 
+      <div className='flex flex-col justify-center gap-2 items-center xl:w-auto sm:w-[40%] pt-12 px-40'> 
         {/*Form starts here */}
         {/* <div className="mt-16 text-3xl leading-9 text-center text-black max-md:mt-10 max-md:max-w-full">
           Enter your details for a new connection
@@ -198,6 +199,11 @@ const corporateOffers = () => {
         <div className="justify-center px-6 py-4 mt-2.5 text-base font-medium leading-4 text-center text-white whitespace-nowrap bg-fuchsia-600 rounded max-md:px-5">
           Submit
         </div> */}
+        <h1 className="text-4xl font-semibold">
+                  Get in touch for <span className="text-red-600">MDU</span> Connection
+                </h1>
+
+        <Form />
       </div>
     </div>
     
