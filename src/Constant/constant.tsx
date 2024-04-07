@@ -1,3 +1,5 @@
+import { DthPlanProps } from "@/utils/type";
+
 export const footerCard: { icon: string; title: string }[] = [
   {
     icon: "/footer/icon1.png",
@@ -43,61 +45,44 @@ export const dthDetails: { image: string; title: string }[] = [
   },
 ];
 
-export const tataPlayPlans: {
-  title?: string;
-  subTitle: string;
-  price: string;
-}[] = [
+export const tataPlayPlans: DthPlanProps[] = [
   {
-    title: "HD Set Top Box",
+    title: "Mega",
     subTitle: "1 Month Hindi Super Value",
     price: "1279",
+    color: "orange",
   },
   {
-    title: "HD Set Top Box",
+    title: "Super",
     subTitle: "1 Month Hindi Super Value",
     price: "1279",
+    color: "blue",
   },
   {
-    title: "HD Set Top Box",
+    title: "Premium",
     subTitle: "1 Month Hindi Super Value",
     price: "1279",
+    color: "purple",
   },
 ];
 
-export const marathiPlans: {
-  title?: string;
-  subTitle: string;
-  price: string;
-}[] = [
+export const marathiPlans: DthPlanProps[] = [
   {
     title: "HD Set Top Box",
     subTitle: "1 Month Hindi Super Value",
     price: "1279",
+    color: "orange",
   },
   {
     title: "HD Set Top Box",
     subTitle: "1 Month Hindi Super Value",
     price: "1279",
+    color: "blue",
   },
   {
     title: "HD Set Top Box",
     subTitle: "1 Month Hindi Super Value",
     price: "1279",
-  },
-  {
-    title: "HD Set Top Box",
-    subTitle: "1 Month Hindi Super Value",
-    price: "1279",
-  },
-  {
-    title: "HD Set Top Box",
-    subTitle: "1 Month Hindi Super Value",
-    price: "1279",
-  },
-  {
-    title: "HD Set Top Box",
-    subTitle: "1 Month Hindi Super Value",
-    price: "1279",
+    color: "purple",
   },
 ];

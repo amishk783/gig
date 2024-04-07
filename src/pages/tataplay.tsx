@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Prefooter } from "@/components/Prefooter";
 import { CheckCircle2 } from "lucide-react";
 import { Card } from "@/components/Card";
+import Carousel from "@/components/Carousel";
 
 export const services: string[] = [
   "Installation With in 4 Hours All India",
@@ -19,7 +20,7 @@ export default function tataplay() {
   return (
     <div className="px-5 max-container ">
       <div className="z-[10]">
-        <div className="flex flex-col xl:pt-20 md:flex-row border-b-2 border-slate-200 z-[10] items-center xl:justify-around  justify-center py-8 gap-5">
+        <div className="flex flex-col xl:pt-20 md:flex-row border-b-2 border-slate-200 z-[10]  xl:justify-around  justify-center py-8 xl:gap-5">
           <div
             aria-hidden="true"
             className="pointer-events-none top-10 absolute inset-x-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -41,10 +42,13 @@ export default function tataplay() {
             height={300}
           />
 
-          <div className=" flex flex-col justify-center gap-2 items-center xl:w-[40%] pt-12 ">
-            <h1 className="text-4xl font-semibold">
-              Get a <span className="text-red-600">New</span> Connection
+          <div className=" flex flex-col justify-start  xl:gap-10 items-center xl:w-[40%] xl:pt-5  ">
+            <h1 className="text-5xl xl:text-center font-semibold ">
+              Get a <span className="text-red-600">New</span> TataPlay Connection
             </h1>
+            <h2 className="text-3xl xl:text-center">Only At</h2>
+
+            <h2 className="text-3xl "> @ Rs.1299/-</h2>
             <p className="border-b-2 ring-amber-400">
               FREE HOME DELIVERY | COD AVAILABLE
             </p>
@@ -83,30 +87,134 @@ export default function tataplay() {
           </div>
         ))}
       </div> */}
+      {/* Marathi Plans */}
       <div className="flex flex-col mt-10 ">
-        <div>
-          
+        <div className="text-4xl pt-10 pb-5 font-sans font-bold gap-5 text-center ">
+          Explore Our Subscription <span className="text-red-500">Plans!</span>
         </div>
-        <div className="flex justify-center items-center ">
-          <div className="-z-1 h-48 w-48 border-4 rounded-full bg-red-500 border-red-400 border-b-transparent border-l-transparent -rotate-45 "></div>
-        </div>
-        <div className="-mt-28 z-0 ">
-          <div className=" bg-red-500">
-            <h1 className="text-4xl font-semibold text-center ">
-              HD Set Top Box{" "}
-            </h1>
+        <div className="flex justify-evenly py-10 ">
+          <div className="flex-col xl:flex xl:flex-row bg-gradient-to-r from-red-900 to-red-500 rounded-lg">
+            <div className="w-full px-5 xl:w-[40%]">
+              <div className="flex flex-col xl:px-10 py-10 gap-5">
+                <h1 className="text-5xl rounded-lg text-white">
+                  Hindi Dhamaka Plans
+                </h1>
+                <h2 className="text-3xl text-white">Best Offers</h2>
+                <h3 className="text-xl text-white">
+                  <span className="text-purple-500 text-2xl font-bold">
+                    25+
+                  </span>{" "}
+                  OTT APPS
+                </h3>
+                <p className="text-white">
+                  Elevate your television experience with our diverse range of
+                  DTH plans designed to cater to every viewer's preferences.{" "}
+                </p>
+              </div>
+            </div>
+            <div className="hidden xl:flex justify-evenly py-5 gap-5 px-5">
+              {tataPlayPlans.map((tataplayDetail) => (
+                <Card
+                  key={tataplayDetail.title}
+                  color={tataplayDetail.color}
+                  title={tataplayDetail.title}
+                  subTitle={tataplayDetail.subTitle}
+                  price={tataplayDetail.price}
+                />
+              ))}
+            </div>
+            <div className="pb-5 md:hidden">
+              <Carousel slides={tataPlayPlans} />
+            </div>
           </div>
         </div>
-          <div className="flex justify-between py-10">
-            {tataPlayPlans.map((tataplayDetail) => (
-              <Card
-                key={tataplayDetail.title}
-                title={tataplayDetail.title}
-                subTitle={tataplayDetail.subTitle}
-                price={tataplayDetail.price}
-              />
-            ))}
+      </div>
+      {/* Hindi plans */}
+      <div className="flex flex-col mt-5 bg- ">
+        <div className="text-4xl pt-10 pb-5 font-sans font-bold gap-5 text-start ">
+          <h1 className="px-5 py-5 rounded-lg text-white bg-red-800">
+            Explore Our Subscription{" "}
+            <span className="text-red-500">Plans!</span>
+          </h1>
+        </div>
+        <div className="flex  justify-evenly py-10 ">
+          <div className="flex-col xl:flex xl:flex-row bg-gradient-to-r from-red-900 to-red-500 rounded-lg">
+            <div className="w-full px-5 xl:w-[40%]">
+              <div className="flex flex-col  xl:px-10 py-10 gap-5">
+                <h1 className="text-5xl rounded-lg text-white">
+                  Marathi Dhamaka Plans
+                </h1>
+                <h2 className="text-3xl text-white">Best Offers</h2>
+                <h3 className="text-xl text-white">
+                  <span className="text-purple-500 text-2xl font-bold">
+                    25+
+                  </span>{" "}
+                  OTT APPS
+                </h3>
+                <p className="text-white">
+                  Elevate your television experience with our diverse range of
+                  DTH plans designed to cater to every viewer's preferences.{" "}
+                </p>
+              </div>
+            </div>
+            <div className="justify-evenly py-5 gap-5 px-5 hidden xl:flex">
+              {tataPlayPlans.map((tataplayDetail) => (
+                <Card
+                  key={tataplayDetail.title}
+                  color={tataplayDetail.color}
+                  title={tataplayDetail.title}
+                  subTitle={tataplayDetail.subTitle}
+                  price={tataplayDetail.price}
+                />
+              ))}
+            </div>
+            <div className="pb-5 md:hidden">
+              <Carousel slides={tataPlayPlans} />
+            </div>
           </div>
+        </div>
+      </div>
+      {/* etc */}
+      <div className="flex flex-col mt-5">
+        <div className="text-4xl pt-10 pb-5 font-sans font-bold gap-5 text-start">
+          Explore Our Subscription <span className="text-red-500">Plans!</span>
+        </div>
+        <div className="flex justify-evenly py-10 ">
+          <div className="flex-col xl:flex xl:flex-row bg-gradient-to-r from-red-900 to-red-500 rounded-lg">
+            <div className="w-full px-5 xl:w-[40%]">
+              <div className="flex flex-col xl:px-10 py-10 gap-5">
+                <h1 className="text-5xl rounded-lg text-white">
+                  Marathi Dhamaka Plans
+                </h1>
+                <h2 className="text-3xl text-white">Best Offers</h2>
+                <h3 className="text-xl text-white">
+                  <span className="text-purple-500 text-2xl font-bold">
+                    25+
+                  </span>{" "}
+                  OTT APPS
+                </h3>
+                <p className="text-white">
+                  Elevate your television experience with our diverse range of
+                  DTH plans designed to cater to every viewer's preferences.{" "}
+                </p>
+              </div>
+            </div>
+            <div className="hidden xl:flex justify-evenly py-5 gap-5 px-5">
+              {tataPlayPlans.map((tataplayDetail) => (
+                <Card
+                  color={tataplayDetail.color}
+                  key={tataplayDetail.title}
+                  title={tataplayDetail.title}
+                  subTitle={tataplayDetail.subTitle}
+                  price={tataplayDetail.price}
+                />
+              ))}
+            </div>
+            <div className="pb-5 md:hidden">
+              <Carousel slides={tataPlayPlans} />
+            </div>
+          </div>
+        </div>
       </div>
       <Prefooter />
     </div>
