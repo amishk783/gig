@@ -107,7 +107,7 @@ export default function tataplay() {
                   </span>{" "}
                   OTT APPS
                 </h3>
-                <p className="text-white">
+                <p className="text-white text-lg">
                   Elevate your television experience with our diverse range of
                   DTH plans designed to cater to every viewer&apos;s
                   preferences.{" "}
@@ -153,7 +153,7 @@ export default function tataplay() {
                   </span>{" "}
                   OTT APPS
                 </h3>
-                <p className="text-white">
+                <p className="text-white text-lg">
                   Elevate your television experience with our diverse range of
                   DTH plans designed to cater to every viewer&apos;s
                   preferences.
@@ -196,7 +196,7 @@ export default function tataplay() {
                   </span>{" "}
                   OTT APPS
                 </h3>
-                <p className="text-white">
+                <p className="text-white text-lg font-normal">
                   Elevate your television experience with our diverse range of
                   DTH plans designed to cater to every viewer&apos;s
                   preferences.{" "}
