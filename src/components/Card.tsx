@@ -23,7 +23,7 @@ export function Card({ title, subTitle, price, color }: DthPlanProps) {
 
   return (
     <div
-      className="flex flex-col bg-red-50 gap-4 text-xl py-5 transition duration-300 ease-in-out transform hover:scale-[102%] shadow-lg shadow-red-300 hover:shadow-lg rounded-lg hover:shadow-red-100 items-center "
+      className="flex flex-col bg-red-50 gap-4 text-xl py-5 transition duration-300 ease-in-out transform xl:hover:scale-[102%] shadow-lg shadow-red-300 hover:shadow-lg rounded-lg hover:shadow-red-100 items-center "
       key={title}
     >
       <div className="border-b-2 border-red-500 ">

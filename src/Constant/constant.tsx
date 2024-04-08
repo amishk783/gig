@@ -86,3 +86,31 @@ export const marathiPlans: DthPlanProps[] = [
     color: "purple",
   },
 ];
+
+
+export const corporateBenefits: { img: string; text: string }[] = [
+  {
+    img: "",
+    text: "Maximum HD channels",
+  },
+  {
+    img: "",
+    text: "Maximum HD channels",
+  },
+  {
+    img: "",
+    text: "Maximum HD channels",
+  },
+  {
+    img: "",
+    text: "Maximum HD channels",
+  },
+  {
+    img: "",
+    text: "Maximum HD channels",
+  },
+  {
+    img: "",
+    text: "Maximum HD channels",
+  },
+];

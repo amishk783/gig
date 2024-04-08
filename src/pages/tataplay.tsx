@@ -44,7 +44,8 @@ export default function tataplay() {
 
           <div className=" flex flex-col justify-start  xl:gap-10 items-center xl:w-[40%] xl:pt-5  ">
             <h1 className="text-5xl xl:text-center font-semibold ">
-              Get a <span className="text-red-600">New</span> TataPlay Connection
+              Get a <span className="text-red-600">New</span> TataPlay
+              Connection
             </h1>
             <h2 className="text-3xl xl:text-center">Only At</h2>
 
@@ -108,7 +109,8 @@ export default function tataplay() {
                 </h3>
                 <p className="text-white">
                   Elevate your television experience with our diverse range of
-                  DTH plans designed to cater to every viewer's preferences.{" "}
+                  DTH plans designed to cater to every viewer&apos;s
+                  preferences.{" "}
                 </p>
               </div>
             </div>
@@ -153,7 +155,8 @@ export default function tataplay() {
                 </h3>
                 <p className="text-white">
                   Elevate your television experience with our diverse range of
-                  DTH plans designed to cater to every viewer's preferences.{" "}
+                  DTH plans designed to cater to every viewer&apos;s
+                  preferences.
                 </p>
               </div>
             </div>
@@ -195,7 +198,8 @@ export default function tataplay() {
                 </h3>
                 <p className="text-white">
                   Elevate your television experience with our diverse range of
-                  DTH plans designed to cater to every viewer's preferences.{" "}
+                  DTH plans designed to cater to every viewer&apos;s
+                  preferences.{" "}
                 </p>
               </div>
             </div>
