@@ -20,44 +20,49 @@ export default function Home() {
   return (
     <>
       <main className="font-sans">
-        <div className="px-5  ">
-          <div className="z-[10] max-container ">
-            <div className="flex flex-col md:flex-row border-b-2 border-slate-200 z-[10] items-center xl:justify-evenly justify-center py-8 gap-5 ">
-              <div className=" md:hidden w-full h-[600px] bg-[url('/dth/bg.jpg')] bg-no-repeat bg-contain bg-left z-[-10] absolute opacity-50"></div>
-              <div className=" w-[125%] h-[400px] bg-[url('/dth/front.png')] bg-no-repeat bg-contain bg-left-bottom z-[-10] absolute "></div>
-              <div className="flex xl:-mt-40">
-                {/* <Image
-                  className="hidden md:flex left-[calc(50%-13rem)] aspect-[1155/878]  w-[46.125rem] "
-                  src="/bg.png"
-                  alt="hero"
-                  width={700}
-                  height={300}
-                /> */}
-                <div className="flex flex-col xl:px-10 gap-5 text-black">
-                  <h1 className="text-6xl rounded-lg ">Hindi Dhamaka Plans</h1>
-                  <h2 className="text-3xl ">Best Offers</h2>
-                  <h3 className="text-xl ">
-                    <span className="text-purple-500 text-2xl font-bold">
-                      25+
-                    </span>{" "}
-                    OTT APPS
-                  </h3>
-                  <p className="">
-                    Elevate your television experience with our diverse range of
-                    DTH plans designed to cater to every viewer&apos;s
-                    preferences.{" "}
-                  </p>
-                </div>
-              </div>
+        <div className="">
+          <div className="w-full h-[115%] bg-[url('/dth/bg-front.jpeg')] bg-no-repeat bg-contain z-[-10] absolute opacity-100 bg-blend-multiply bg-red-300"></div>
+          <div className="mb-10">
+            <div className="z-[10] max-container ">
+              <div className="flex flex-col md:flex-row   z-[10] items-center xl:justify-evenly justify-center py-8 gap-5 ">
+                <div className=" md:hidden w-full h-[600px] bg-[url('/dth/bg.jpg')] bg-no-repeat bg-contain bg-left z-[-10] absolute opacity-50"></div>
 
-              <div className=" flex flex-col justify-center gap-2 items-center  xl:pt-20  xl:w-[40%] pt-12 ">
-                <h1 className="text-4xl font-semibold">
-                  Get a <span className="text-red-600">New</span> Connection
-                </h1>
-                <p className="border-b-2 ring-amber-400">
-                  FREE HOME DELIVERY | COD AVAILABLE
-                </p>
-                <Form />
+                <div className="flex flex-col-reverse">
+                  <Image
+                    className="hidden md:flex w-[46.125rem] "
+                    src="/dth/front.png"
+                    alt="hero"
+                    width={400}
+                    height={300}
+                  />
+                  <div className="flex flex-col xl:px-10 gap-5 text-white">
+                    <h1 className="text-6xl rounded-lg ">
+                      Hindi Dhamaka Plans
+                    </h1>
+                    <h2 className="text-3xl ">Best Offers</h2>
+                    <h3 className="text-xl ">
+                      <span className="text-purple-500 text-2xl font-bold">
+                        25+
+                      </span>{" "}
+                      OTT APPS
+                    </h3>
+                    <p className="">
+                      Elevate your television experience with our diverse range
+                      of DTH plans designed to cater to every viewer&apos;s
+                      preferences.{" "}
+                    </p>
+                  </div>
+                </div>
+
+                <div className=" flex flex-col justify-center gap-2 items-center  xl:pt-20  xl:w-[40%] pt-12 text-white bg-[#474f8a] rounded-xl ">
+                  <h1 className="text-4xl font-semibold">
+                    Get a <span className="text-red-600">New</span> Connection
+                  </h1>
+                  <p className="border-b-2 ring-amber-400 ">
+                    FREE HOME DELIVERY | COD AVAILABLE
+                  </p>
+                  <Form />
+                </div>
               </div>
             </div>
           </div>
@@ -75,7 +80,7 @@ export default function Home() {
               />
             </div> */}
           </div>
-          <div className="flex flex-col texture  rounded-2xl text-white">
+          <div className="flex flex-col texture  rounded-2xl text-white xl:mx-5">
             <div className="text-5xl pt-10 pb-5 font-sans font-bold gap-5 text-center ">
               Explore New <span className="text-red-200">Plans!</span>
             </div>
