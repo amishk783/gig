@@ -75,7 +75,7 @@ export default function Home() {
               />
             </div> */}
           </div>
-          <div className="flex flex-col bg-[#5c649c]  rounded-2xl text-white">
+          <div className="flex flex-col texture  rounded-2xl text-white">
             <div className="text-5xl pt-10 pb-5 font-sans font-bold gap-5 text-center ">
               Explore New <span className="text-red-200">Plans!</span>
             </div>
