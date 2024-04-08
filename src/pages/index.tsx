@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <main className="font-sans">
         <div className="">
-          <div className="w-full h-[115%] bg-[url('/dth/bg-front.jpeg')] bg-no-repeat bg-contain z-[-10] absolute opacity-100 bg-blend-multiply bg-red-300"></div>
+          <div className="w-full h-[1200px] bg-[url('/dth/bg-front.jpeg')] bg-no-repeat bg-contain z-[-10] absolute opacity-100 bg-blend-multiply bg-[#97203E]"></div>
           <div className="mb-10">
             <div className="z-[10] max-container ">
               <div className="flex flex-col md:flex-row   z-[10] items-center xl:justify-evenly justify-center py-8 gap-5 ">
@@ -36,7 +36,7 @@ export default function Home() {
                     height={300}
                   />
                   <div className="flex flex-col xl:px-10 gap-5 text-white">
-                    <h1 className="text-6xl rounded-lg ">
+                    <h1 className="text-6xl rounded-lg font-bold">
                       Hindi Dhamaka Plans
                     </h1>
                     <h2 className="text-3xl ">Best Offers</h2>
@@ -54,7 +54,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className=" flex flex-col justify-center gap-2 items-center  xl:pt-20  xl:w-[40%] pt-12 text-white bg-[#474f8a] rounded-xl ">
+                <div className=" flex flex-col justify-center gap-2 items-center  xl:py-10  xl:w-[40%] pt-12 text-black bg-[#e7e7ea] rounded-xl ">
                   <h1 className="text-4xl font-semibold">
                     Get a <span className="text-red-600">New</span> Connection
                   </h1>
