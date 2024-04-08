@@ -175,8 +175,8 @@ export default function tataplay() {
         </div>
       </div>
       {/* etc */}
-      <div className="flex flex-col mt-5">
-        <div className="text-4xl pt-10 pb-5 font-sans font-bold gap-5 text-start">
+      <div className="text-4xl pt-10 pb-5 font-sans font-bold gap-5 text-start ">
+        <div className="px-5 py-5 rounded-lg text-white bg-red-800">
           Explore Our Subscription <span className="text-red-500">Plans!</span>
         </div>
         <div className="flex justify-evenly py-10 ">
