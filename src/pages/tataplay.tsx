@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Prefooter } from "@/components/Prefooter";
 import { CheckCircle2 } from "lucide-react";
 import { Card } from "@/components/Card";
-import Carousel from "@/components/Carousel";
+import Carousel from "@/components/Carousel/Carousel";
 
 export const services: string[] = [
   "Installation With in 4 Hours All India",

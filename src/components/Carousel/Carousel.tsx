@@ -1,7 +1,8 @@
 import React from "react";
-import { Card } from "./Card";
+import { Card } from "../Card";
 import { EmblaOptionsType } from "embla-carousel";
-// import { DotButton, useDotButton } from "./EmblaCarouselDotButton";
+import { EmblaCarouselType } from "embla-carousel";
+import { DotButton, useDotButton } from "./CaraouselDotButton";
 
 import useEmblaCarousel from "embla-carousel-react";
 
@@ -19,9 +20,8 @@ const Carousel: React.FC<PropType> = (props) => {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
-  //   const { selectedIndex, scrollSnaps, onDotButtonClick } =
-  //     useDotButton(emblaApi);
-
+  const { selectedIndex, scrollSnaps, onDotButtonClick } =
+    useDotButton(emblaApi!);
 
   return (
     <section className="max-w-[48rem] m-auto">
@@ -43,24 +43,18 @@ const Carousel: React.FC<PropType> = (props) => {
           ))}
         </div>
       </div>
-
-      <div className="embla__controls">
-        {/* <div className="embla__buttons">
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div> */}
-
-        {/* <div className="embla__dots">
-          {scrollSnaps.map((_, index) => (
+      <div className="pt-5 gap-2">
+        <div className="flex flex-wrap justify-center items-center mr-[0.5rem] gap-5">
+          {scrollSnaps.map((_, index: number) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
-              className={"embla__dot".concat(
-                index === selectedIndex ? " embla__dot--selected" : ""
+              className={"bg-transparent touch-manipulation inline-flex cursor-pointer w-4 h-4 items-center justify-center rounded-full border-2".concat(
+                index === selectedIndex ? " bg-white border-red-500 ring-2 ring-yellow-50 drop-shadow-2xl" : " border-red-100"
               )}
-            />
+            ></DotButton>
           ))}
-        </div> */}
+        </div>
       </div>
     </section>
   );
