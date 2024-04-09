@@ -37,7 +37,7 @@ export default function Home() {
                     <h1 className="text-6xl rounded-lg ">
                       Latest Offer TATA Play HD SETUP BOX
                     </h1>
-                    <h2 className="text-3xl ">@ Rs.1,299/- Only</h2>
+                    <h2 className=" pt-2 text-4xl ">@ Rs.<span className=" text-yellow-200">1,299/- </span> Only</h2>
                   </div>
                 </div>
 
