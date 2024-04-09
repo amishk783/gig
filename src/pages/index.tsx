@@ -97,16 +97,16 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="sm:py-20 ">
-            <div className="max-md:hidden w-full h-1/2 sidebanner bg-no-repeat bg-cover z-[-10] absolute opacity-100 bg-blend-multiply bg-[#97203E] "></div>
+          <div className="sm:py-20 py-28">
+            <div className="max-md:hidden w-full h-3/5 sidebanner bg-no-repeat bg-cover z-[-10] absolute opacity-100 bg-blend-multiply  md:rounded-lg bg-yellow-400  "></div>
             <div className="flex flex-col md:flex-row py-10 xl:px-20 ">
-              <div className=" text-white ">
-                <div className="px-10 py-10 text-4xl text-bold ">
-                  <h1 className="text-6xl rounded-lg xl:w-[90%]">
-                    Check out latest offers!
+              <div className=" text-black ">
+                <div className="px- py-10 text-4xl text-bold ">
+                  <h1 className="text-3xl text-black max-sm:text-center xl:text-7xl font-semibold rounded-lg xl:w-[90%] roboto">
+                    Check out <span className="text-red-700">latest</span> offers!
                   </h1>
-                  <h3 className=" pt-2 text-4xl ">
-                    @ Rs.<span className=" text-yellow-200">1,299/- </span> Only
+                  <h3 className=" pt-2 text-base xl:text-xl max-sm:text-center">
+                    Check out amazing deals on various brands
                   </h3>
                 </div>
               </div>
