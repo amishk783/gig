@@ -2,6 +2,8 @@ import Image from "next/image";
 import { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoMdCall } from "react-icons/io";
 import { HomeOffers, footerCard } from "@/Constant/constant";
 import { dthDetails } from "@/Constant/constant";
 import { Prefooter } from "@/components/Prefooter";
@@ -124,7 +126,6 @@ export default function Home() {
                     {/* <h2 className="font-normal text-center">{benefit.text}</h2> */}
                   </div>
                 ))}
-                
               </div>
             </div>
           </div>
@@ -158,17 +159,17 @@ export default function Home() {
           </div>
         </div>
         {isHelpOpen && (
-          <div className="flex flex-col py-6 gap-2 px-5 bg-red-500 rounded-md fixed  right-7 top-[73%] text-white text-lg font-sans ">
-            <h3 className="border-b py-2">Call us</h3>
-            <h3 className="flex border-b py-2 gap-2 items-center">
-              Chat with us
-              <span>
-                <FaSquareWhatsapp
-                  size={24}
-                  className="bg-green-500 rounded-full "
-                />
-              </span>
-            </h3>
+          <div className="md:hidden flex flex-col  gap-5 rounded-md fixed right-7 top-[75%] sm:top-[72%] text-white text-lg font-sans ">
+            <a href="tel:+900300400">
+              <IoMdCall size={44} className="bg-green-400 p-2 rounded-full" />
+            </a>
+
+            <a href="whatsapp://send?text=Hello World!&phone=+919818714940">
+              <FaSquareWhatsapp
+                size={44}
+                className="bg-green-500 p-2 rounded-full "
+              />
+            </a>
           </div>
         )}
         <div className=" md:hidden fixed  right-7 top-[90%]  ">
