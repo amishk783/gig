@@ -37,7 +37,10 @@ export default function Home() {
                     <h1 className="text-6xl rounded-lg ">
                       Latest Offer TATA Play HD SETUP BOX
                     </h1>
-                    <h2 className=" pt-2 text-4xl ">@ Rs.<span className=" text-yellow-200">1,299/- </span> Only</h2>
+                    <h2 className=" pt-2 text-4xl ">
+                      @ Rs.<span className=" text-yellow-200">1,299/- </span>{" "}
+                      Only
+                    </h2>
                   </div>
                 </div>
 
@@ -92,28 +95,41 @@ export default function Home() {
               ))}
             </div>
           </div>
-        <div className="flex py-20">
-          <div className="sidebanner text-white w-1/2">
-           <div className="px-10 py-10 text-4xl text-bold ">
-            <h1 className="text-6xl rounded-lg xl:w-[90%]">
-                      Check out latest offers!
-                    </h1>
-                    <h3 className=" pt-2 text-4xl ">@ Rs.<span className=" text-yellow-200">1,299/- </span> Only</h3></div>
-          </div>
-          <div className="grid grid-cols-2 xl:grid-cols-3  gap-10 px-5">
-          {HomeOffers.map((benefit) => (
-            <div
-              className=" border-2 border-slate-600 py-24 px-6 rounded-xl"
-              key={benefit.text}
-            >
-              <Image alt="benefits" src="" width={200} height={100} />
-              <h2 className="font-normal text-center">{benefit.text}</h2>
+          <div className="sm:py-20 ">
+            <div className="max-md:hidden w-full h-1/2 sidebanner bg-no-repeat bg-cover z-[-10] absolute opacity-100 bg-blend-multiply bg-[#97203E] "></div>
+            <div className="flex flex-col md:flex-row py-10 xl:px-20 ">
+              <div className=" text-white ">
+                <div className="px-10 py-10 text-4xl text-bold ">
+                  <h1 className="text-6xl rounded-lg xl:w-[90%]">
+                    Check out latest offers!
+                  </h1>
+                  <h3 className=" pt-2 text-4xl ">
+                    @ Rs.<span className=" text-yellow-200">1,299/- </span> Only
+                  </h3>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 px-5 sm:px-10">
+                {HomeOffers.map((benefit) => (
+                  <div
+                    className=" border-2 border-slate-600 rounded-xl transition duration-300 ease-in-out transform xl:hover:scale-[102%] shadow-lg shadow-red-300 hover:shadow-lg hover:shadow-red-100 "
+                    key={benefit.text}
+                  >
+                    <Image
+                      className="rounded-xl h-full max-xl:w-full"
+                      alt="benefits"
+                      src={benefit.img}
+                      width={280}
+                      height={200}
+                    />
+                    {/* <h2 className="font-normal text-center">{benefit.text}</h2> */}
+                  </div>
+                ))}
+                
+              </div>
             </div>
-          ))}
-        </div>
           </div>
           {/* Why Tata Play DTH? */}
-          <div className="flex flex-col px-5">
+          <div className="flex flex-col px-5 max-container">
             <div className="text-4xl pt-10 pb-5 font-sans font-bold gap-5 text-center ">
               Why Choose our <span className="text-red-500">DTH</span> Plans?
             </div>

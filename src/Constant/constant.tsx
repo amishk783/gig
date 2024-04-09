@@ -117,15 +117,15 @@ export const corporateBenefits: { img: string; text: string }[] = [
 
 export const HomeOffers: { img: string; text: string }[] = [
   {
-    img: "",
+    img: "/offers/offer1.jpeg",
     text: "Maximum HD channels",
   },
   {
-    img: "",
+    img: "/offers/offer2.jpeg",
     text: "Maximum HD channels",
   },
   {
-    img: "",
+    img: "/offers/offer3.jpeg",
     text: "Maximum HD channels",
   },
 ];
