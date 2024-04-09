@@ -168,7 +168,7 @@ const corporateOffers = () => {
 
         <Form />
       </div>
-      <div className="items-center self-center mt-10 max-w-full max-md:mt-10 max-md:px-2 ">
+      <div className="items-center self-center mt-10 max-w-full max-md:mt-10 max-md:px-2 max-xl:px-10 py-10 ">
         <h1 className="text-4xl pt-10 pb-5 font-sans font-bold gap-5 text-center ">
           Benefits
         </h1>

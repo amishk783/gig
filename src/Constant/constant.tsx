@@ -114,3 +114,18 @@ export const corporateBenefits: { img: string; text: string }[] = [
     text: "Maximum HD channels",
   },
 ];
+
+export const HomeOffers: { img: string; text: string }[] = [
+  {
+    img: "",
+    text: "Maximum HD channels",
+  },
+  {
+    img: "",
+    text: "Maximum HD channels",
+  },
+  {
+    img: "",
+    text: "Maximum HD channels",
+  },
+];

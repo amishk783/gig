@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { FaSquareWhatsapp } from "react-icons/fa6";
-import { footerCard } from "@/Constant/constant";
+import { HomeOffers, footerCard } from "@/Constant/constant";
 import { dthDetails } from "@/Constant/constant";
 import { Prefooter } from "@/components/Prefooter";
 import { HelpCircle, XCircle } from "lucide-react";
@@ -91,6 +91,26 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        <div className="flex py-20">
+          <div className="sidebanner text-white w-1/2">
+           <div className="px-10 py-10 text-4xl text-bold ">
+            <h1 className="text-6xl rounded-lg xl:w-[90%]">
+                      Check out latest offers!
+                    </h1>
+                    <h3 className=" pt-2 text-4xl ">@ Rs.<span className=" text-yellow-200">1,299/- </span> Only</h3></div>
+          </div>
+          <div className="grid grid-cols-2 xl:grid-cols-3  gap-10 px-5">
+          {HomeOffers.map((benefit) => (
+            <div
+              className=" border-2 border-slate-600 py-24 px-6 rounded-xl"
+              key={benefit.text}
+            >
+              <Image alt="benefits" src="" width={200} height={100} />
+              <h2 className="font-normal text-center">{benefit.text}</h2>
+            </div>
+          ))}
+        </div>
           </div>
           {/* Why Tata Play DTH? */}
           <div className="flex flex-col px-5">
