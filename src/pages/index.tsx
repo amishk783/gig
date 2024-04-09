@@ -41,7 +41,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className=" flex flex-col justify-center gap-2 items-center  xl:py-10  xl:w-[40%] pt-12 text-black bg-[#e7e7ea] rounded-xl ">
+                <div className="flex flex-col justify-center gap-2 items-center  xl:py-10  xl:w-[40%] pt-12 text-black bg-[#e7e7ea] rounded-xl w-[90%] mx-5">
                   <h1 className="text-4xl font-semibold text-center max-sm:px-2 ">
                     Get a <span className="text-red-600">New</span> Connection
                   </h1>

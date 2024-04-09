@@ -2,7 +2,7 @@ import { Header } from "@/components/Header";
 
 export default function About() {
   return (
-    <div className="max-container pt-10 mt-10 min-h-screen">
+    <div className="max-container pt-10 mt-10 min-h-screen px-5">
       <div className="text-3xl  ">
         <h1>About us</h1>
       </div>

@@ -15,10 +15,10 @@ const corporateOffers = () => {
           </div>
         </div> */}
 
-      <div className="flex justify-center items-center px-16 py-5 w-full max-md:px-5 max-md:max-w-full border-b-2 mt-8">
+      <div className="flex justify-center items-center px-16 py-5 w-full max-md:px-5 max-md:max-w-full border-b-2 md:mt-8">
         <div className="max-w-full max-container">
           <div className="flex justify-evenly gap-5 max-md:flex-col max-md:gap-0">
-            <div className="flex flex-col pr-20 max-md:ml-0 max-md:w-full">
+            <div className="flex flex-col pr-5 xl:pr-20 justify-center items-center max-md:ml-0 max-md:w-full">
               <Image
                 src="/corporate-img.png"
                 width={550}
