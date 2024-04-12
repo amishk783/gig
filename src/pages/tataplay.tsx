@@ -42,15 +42,14 @@ export default function tataplay() {
             height={300}
           />
 
-          <div className=" flex flex-col justify-start  xl:gap-10 items-center xl:w-[40%] xl:pt-5  ">
-            <h1 className="text-5xl xl:text-center font-semibold ">
+          <div className=" flex flex-col justify-start  xl:gap-5 items-center xl:w-[50%] xl:pt-24 pl-16  ">
+            <h1 className="text-7xl xl:text-center font-semibold ">
               Get a <span className="text-red-600">New</span> TataPlay
               Connection
             </h1>
-            <h2 className="text-3xl xl:text-center">Only At</h2>
 
-            <h2 className="text-3xl "> @ Rs.1299/-</h2>
-            <p className="border-b-2 ring-amber-400">
+            <h2 className="text-3xl font-bold"> @ Rs.<span className="text-red-600">1299/-</span></h2>
+            <p className="border-b-2 ring-amber-400 pt-6">
               FREE HOME DELIVERY | COD AVAILABLE
             </p>
           </div>
