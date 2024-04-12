@@ -21,7 +21,7 @@ export default function Home() {
     <>
       <main className="font-sans">
         <div className="">
-          <div className="w-full h-full bg-[url('/dth/bg-front.jpeg')] bg-no-repeat bg-cover z-[-10] absolute opacity-100 bg-blend-multiply bg-[#97203E]"></div>
+          <div className="w-full h-full bg-[url('/dth/bg-front.jpeg')] bg-no-repeat bg-cover z-[-10] absolute opacity-100 bg-blend-multiply bg-[#4d1b28]"></div>
           <div className="mb-10 pt-20 max-sm:px-2">
             <div className="z-[10] max-container ">
               <div className="flex flex-col md:flex-row   z-[10] items-center xl:justify-evenly justify-center py-8 gap-5 ">
@@ -34,17 +34,18 @@ export default function Home() {
                     height={200}
                   />
                   <div className="flex flex-col xl:px-10 gap-5 text-white">
-                    <h1 className="text-6xl rounded-lg ">
-                      Latest Offer TATA Play HD SETUP BOX
-                    </h1>
-                    <h2 className=" pt-2 text-4xl ">
+                    <h3 className="text-3xl rounded-lg pb-3 ">
+                      Latest Offer !
+                    </h3>
+                    <h1 className="text-5xl pt-6">TATA PLAY HD SET TOP BOX</h1>
+                    <h2 className=" text-4xl ">
                       @ Rs.<span className=" text-yellow-200">1,299/- </span>{" "}
                       Only
                     </h2>
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-center gap-2 items-center  xl:py-10  xl:w-[40%] pt-12 text-black bg-[#e7e7ea] rounded-xl w-[90%] mx-5">
+                <div className="flex flex-col justify-center gap-2 items-center xl:py-10  xl:w-[40%] pt-12 text-black bg-[#e7e7ea] rounded-xl w-[90%] mx-5">
                   <h1 className="text-4xl font-semibold text-center max-sm:px-2 ">
                     Get a <span className="text-red-600">New</span> Connection
                   </h1>
@@ -77,7 +78,7 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex-row border-b-2 px-4 xl:px-28 border-slate-200 items-center justify-center py-6 xl:py-16 gap-5 xl:gap-20  ">
               {dthDetails.map((dthDetail) => (
                 <div
-                  className="flex flex-col gap-2 text-xl bg-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-lg  rounded-3xl hover:shadow-red-100 items-center "
+                  className="flex flex-col gap-2 text-xl bg-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md hover:shadow-md  rounded-3xl hover:shadow-red-100 items-center "
                   key={dthDetail.title}
                 >
                   <Link href="/tataplay">
