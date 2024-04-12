@@ -32,9 +32,6 @@
     rgb(var(--background-start-rgb));
 } */
 
-/* body {
-  font-family: 'Ojuju', sans-serif;
-} */
 
 @layer utilities {
   .text-balance {
@@ -67,8 +64,14 @@
   }
 
   .sidebanner {
-    clip-path: polygon(50% 0, 86% 70%, 100% 100%, 0% 100%, 0 48%, 0% 0%);
+    /* clip-path: polygon(50% 0, 86% 70%, 100% 100%, 0% 100%, 0 48%, 0% 0%); */
     /* background-color: #000; */
+    background-image: url("/red-ribbon-yellow-background.jpg");
   }
+
+  .roboto {
+    font-family: 'Roboto', sans-serif;
+  }
+  
 
 }

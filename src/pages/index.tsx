@@ -98,7 +98,7 @@ export default function Home() {
             </div>
           </div>
           <div className="sm:py-20 py-28">
-            <div className="max-md:hidden w-full h-3/5 sidebanner bg-no-repeat bg-cover z-[-10] absolute opacity-100 bg-blend-multiply  md:rounded-lg bg-yellow-400  "></div>
+            <div className="max-md:hidden w-full h-3/5 sidebanner bg-no-repeat bg-cover z-[-10] absolute opacity-100 bg-blend-multiply  md:rounded-lg bg-yellow-400 "></div>
             <div className="flex flex-col md:flex-row py-10 xl:px-20 ">
               <div className=" text-black ">
                 <div className="px- py-10 text-4xl text-bold ">
@@ -137,7 +137,7 @@ export default function Home() {
             <div className="grid grid-cols-2 xl:grid-cols-3 xl:flex-row border-b-2 border-slate-200  items-center justify-center py-8 gap-5 xl:gap-20">
               {footerCard.map((dthDetail) => (
                 <div
-                  className="flex flex-col gap-6 bg-slate-200 rounded-md shadow-inner justify-center items-center h-[200px]  "
+                  className="flex flex-col gap-6 bg-violet-200 rounded-md shadow-md justify-center items-center h-[200px]  "
                   key={dthDetail.title}
                 >
                   <Image
