@@ -51,7 +51,7 @@ export default function Home() {
                   <h1 className="text-4xl font-semibold text-center max-sm:px-2 ">
                     Get a <span className="text-red-600">New</span> Connection
                   </h1>
-                  <p className="border-b-2 ring-amber-400 ">
+                  <p className="border-b-2 text-center ring-amber-400 ">
                     FREE HOME DELIVERY | COD AVAILABLE
                   </p>
                   <Form />

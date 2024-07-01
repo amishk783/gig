@@ -10,10 +10,13 @@ type FormValues = {
 };
 
 const schema = z.object({
-  name: z.string().nonempty(),
-  number: z.string().nonempty(),
-  pincode: z.string().nonempty(),
-  address: z.string().nonempty().optional(),
+  name: z.string().nonempty("Name is required"),
+  number: z
+    .string()
+    .min(10, "Number should be 10 digits")
+    .nonempty("Number is required"),
+  pincode: z.string().min(10, "Pincode should be 6 digits").nonempty("Pincode is required"),
+  address: z.string().nonempty("Address is required").optional(),
 });
 
 export function Form({
@@ -41,8 +44,8 @@ export function Form({
     if (response.ok) {
       alert("Email sent");
     }
-
   };
+  console.log(errors);
   return (
     <form
       className="flex flex-col space-y-3 p-5 w-full "
@@ -54,12 +57,22 @@ export function Form({
         placeholder="John doe"
         {...register("name", { required: true })}
       />
+      {errors.name && (
+        <span className="text-red-500 text-md pl-2">{errors.name.message}</span>
+      )}
+
       <label>Phone number</label>
       <input
         className=" border-2 border-slate-200 rounded-md py-2 px-3"
         placeholder="+91-1234567890"
         {...register("number", { required: true })}
       />
+      {errors.number && (
+        <span className="text-red-500 text-md pl-2">
+          {errors.number.message}
+        </span>
+      )}
+
       {!isFooter && (
         <>
           <label className="">Pincode</label>
@@ -68,6 +81,11 @@ export function Form({
             {...register("pincode", { required: true })}
             placeholder="Please share your pincode"
           />
+          {errors.pincode && (
+            <span className="text-red-500 text-md pl-2">
+              {errors.pincode.message}
+            </span>
+          )}
         </>
       )}
       {isCoperate && (
